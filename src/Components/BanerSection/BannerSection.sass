@@ -1,0 +1,42 @@
+@import "../../styles/variables"
+
+.banner-section
+  max-width: 1070px
+  margin: 0 auto
+  height: 500px
+  background: $gradient, url("./images/banner.jpeg") no-repeat center center
+  background-size: cover
+  color: #FFFFFF
+
+  @media screen and (min-width: 768px)
+    display: grid
+    place-items: center
+
+  @media screen and (min-width: 1024px)
+    height: 650px
+
+.banner-section-content
+  display: flex
+  width: 328px
+  margin-right: auto
+  margin-left: auto
+  text-align: center
+  flex-direction: column
+  align-items: center
+
+  @media screen and (min-width: 768px)
+    width: 380px
+
+.banner-section-heading
+  font-size: 40px
+  line-height: 40px
+  margin-top: 40px
+  margin-bottom: 21px
+
+  @media screen and (min-width: 768px)
+    margin-top: 0
+
+.banner-section-text
+  line-height: 26px
+  margin-top: 0
+  margin-bottom: 32px

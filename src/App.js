@@ -1,8 +1,11 @@
+import HomePage from './Pages'
+
 import './App.sass'
+
 function App() {
   return (
     <div>
-      Nunito
+      <HomePage/>
     </div>
   );
 }
