@@ -1,0 +1,35 @@
+@import "../../styles/variables"
+
+.cards-section.container
+  text-align: center
+  margin-top: 140px
+
+.cards-section-grid
+  margin-right: auto
+  margin-left: auto
+  margin-bottom: 50px
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 20px
+
+  @media screen and (min-width: 768px)
+    max-width: 704px
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 16px
+
+  @media screen and (min-width: 1024px)
+    max-width: 904px
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 30px
+
+  @media screen and (min-width: 2560px)
+    max-width: 1170px
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 30px
+
+.cards-section-title
+  margin-bottom: 50px
+
+.cards-section-error-message
+  font-size: 30px
+  color: $red
