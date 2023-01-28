@@ -1,0 +1,118 @@
+@import "../../styles/variables"
+
+.form-section.container
+  margin-top: 140px
+  padding-bottom: 100px
+
+.form-section
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .form-section-phone-helper-text
+    color: $dark-gray
+    font-size: 12px
+    line-height: 14px
+
+  .form-section-error
+    color: $red
+    margin: 3px 14px 0
+    font-size: 12px
+
+  .MuiInputLabel-root.Mui-error,
+  .MuiFormHelperText-root.Mui-error
+    color: $red
+
+  .MuiOutlinedInput-notchedOutline
+    border-color: $gray
+
+  .MuiOutlinedInput-root.Mui-error
+    .MuiOutlinedInput-notchedOutline
+     border-color: $red
+
+  .MuiInputLabel-root
+    color: $dark-gray
+
+  .form-section-phone-helper-text,
+  .MuiInputLabel-root,
+  .MuiFormHelperText-root
+    font-family: 'Nunito', sans-serif
+
+  .MuiOutlinedInput-root,
+  .MuiInputBase-input
+    height: 54px
+
+  .MuiInputBase-input
+    padding: 0 14px
+
+  .form-section-radio-buttons
+    display: block
+    margin-bottom: 50px
+
+    .MuiFormLabel-root
+      display: block
+      margin-bottom: 11px
+
+    label,
+    .MuiButtonBase-root,
+    .MuiTypography-root
+      font-family: 'Nunito', sans-serif
+      color: $black
+      font-size: 16px
+      line-height: 26px
+      padding: 0
+      margin: 0
+
+    label:not(:last-child)
+      margin-bottom: 7px
+
+    .MuiSvgIcon-root
+      color: $gray
+      margin-right: 12px
+
+    .Mui-checked
+      .MuiSvgIcon-root
+        color: $blue
+
+.form-section-form
+  max-width: 380px
+
+.form-section-title
+  margin-bottom: 50px
+
+.form-section-submit-button
+  margin: 0 auto
+  display: block
+
+//image upload
+.form-section-image-uploader
+  position: relative
+  margin-bottom: 50px
+
+.form-section-image-uploader-input
+  display: none
+
+.form-section-image-uploader-box
+  border-radius: 4px
+  display: inline-block
+  width: 100%
+  border: 1px solid $gray
+  padding: 14px 14px 14px 99px
+  box-sizing: border-box
+  height: 54px
+  color: $dark-gray
+  cursor: pointer
+
+.form-section-image-uploader-box__uploaded
+  color: $black
+
+.form-section-image-uploader-button
+  border-radius: 4px 0 0 4px
+  height: 54px
+  width: 84px
+  padding: 14px
+  position: absolute
+  border: 1px solid $black
+  top: 0
+  left: 0
+  cursor: pointer

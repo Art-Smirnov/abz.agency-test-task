@@ -1,8 +1,16 @@
 import "./Button.sass"
 
-const Button = ({children, onClick}) => {
+const Button = ({className, children, onClick, ...props}) => {
   return (
-    <button onClick={onClick} className="button">{children}</button>
+    <button
+      {...props}
+      onClick={onClick}
+      className={`
+        button 
+        ${className ? className : ""}
+      `}>
+      {children}
+    </button>
   )
 }
 
