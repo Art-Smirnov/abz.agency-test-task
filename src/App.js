@@ -1,12 +1,11 @@
 import HomePage from './Pages'
-
+import {AppProvider} from "./AppContext";
 import './App.sass'
-
 function App() {
   return (
-    <div>
+    <AppProvider>
       <HomePage/>
-    </div>
+    </AppProvider>
   );
 }
 

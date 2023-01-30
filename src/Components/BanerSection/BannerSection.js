@@ -1,3 +1,4 @@
+import {memo} from 'react';
 import "./BannerSection.sass"
 import Button from "../UI/Button";
 
@@ -17,4 +18,4 @@ const BannerSection = () => {
   )
 }
 
-export default BannerSection
+export default memo(BannerSection);
