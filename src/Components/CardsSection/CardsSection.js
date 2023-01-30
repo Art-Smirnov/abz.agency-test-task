@@ -1,9 +1,7 @@
-import React, {useState, useEffect, memo, useRef} from 'react';
-import axios from 'axios';
+import React, {memo} from 'react';
 import Card from "./Card";
 import Button from "../UI/Button";
 import Preloader from "../Preloader";
-import {useUsers} from "../../hooks/useApi"
 import useAppContext from "../../AppContext";
 import "./CardsSection.sass";
 

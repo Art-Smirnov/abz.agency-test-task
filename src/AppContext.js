@@ -2,7 +2,7 @@ import {createContext, useContext, useEffect, useReducer, useRef, useState} from
 import appReducer, {initialState} from "./reducers";
 import axios from "axios";
 import {URL} from "./constants";
-import actions, {fetchUsers} from "./actions/actions";
+import actions from "./actions/actions";
 
 const AppContext = createContext(initialState)
 

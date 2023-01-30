@@ -4,7 +4,6 @@ import {TextField} from "@mui/material";
 import Preloader from "../Preloader";
 import Button from "../UI/Button";
 import useAppContext from "../../AppContext";
-import {useApi} from "../../hooks/useApi";
 import RadioButtons from "./RadioButtons";
 import ImageUploader from "./ImageUploader";
 
