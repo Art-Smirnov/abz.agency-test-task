@@ -12,8 +12,8 @@ const useApi = () => {
 
   const fetchPositions = async () => {
     try {
-      const positions = await usersApi.getPositions();
-      setPositions(positions);
+      const response = await usersApi.getPositions();
+      setPositions(response.data.positions);
     } catch (error) {
       console.error(error);
     }

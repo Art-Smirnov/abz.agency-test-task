@@ -21,8 +21,8 @@ export const AppProvider = ({children}) => {
   const fetchUsers = async (page = 1) => {
     dispatch(actions.fetchUsers());
     try {
-      const data = await usersApi.getUsers(page)
-      dispatch(actions.fetchUsersSuccess(data));
+      const response = await usersApi.getUsers(page)
+      dispatch(actions.fetchUsersSuccess(response.data));
     } catch (error) {
       console.error(error);
       dispatch(actions.fetchUsersError());

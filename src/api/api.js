@@ -7,17 +7,11 @@ const instance = axios.create({
 
 export const usersApi = {
   getUsers(page) {
-  return instance.get(`users?page=${page}&count=6`)
-    .then(response => {
-      return response.data
-    })
+  return instance.get(`users?page=${page}&count=6`);
   },
 
   getPositions() {
-    return instance.get('positions')
-      .then(response => {
-        return response.data.positions
-      })
+    return instance.get('positions');
   },
 
   addNewUser(values) {
