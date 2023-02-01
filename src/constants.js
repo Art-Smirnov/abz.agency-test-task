@@ -1,5 +1,3 @@
-export const URL = "https://frontend-test-assignment-api.abz.agency/api/v1/";
-
 export const HANDLE_SHOW_MORE = "HANDLE_SHOW_MORE"
 export const FETCH_USERS = "FETCH_USERS"
 export const FETCH_USERS_SUCCESS = "FETCH_USERS_SUCCESS"
